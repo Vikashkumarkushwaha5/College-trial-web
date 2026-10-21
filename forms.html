@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Invertis University</h1>
+            <p>Learn. Build. Innovate</p>
+            <!-- <nav>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="fee-structure.html">Fee Structure</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav> -->
+        </header>
+        <main>
+            <h1>Admission</h1>
+            <form method="post" action="/admission">
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="userName">
+            <br>
+            <br>
+            <span>Gender</span>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required> Female
+            </label>
+             <label>
+                <input type="radio" name="gender" value="other" required> Other
+            </label>
+            <br>
+            <br>
+            <span>Programming language</span>
+                <label>
+                    <input type="checkbox" name="skills" value="C" required> C
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="Python" required> Python
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="Java" required> Java
+                </label>
+            <br>
+            <br>
+            <label for="country">Country</label>
+            <select id="country" name="userCountry" required>
+            <!-- <select id="country" name="userCountry" multiple required></select> -->
+                <option value="" disabled selected>Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br>
+            <br>
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br>
+            <br>
+            <label for="DoB">DoB</label>
+            <input type="date" id="DoB" name="userDoB">
+            <br>
+            <br>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="userPhone">
+            <br>
+            <br>
+            <label for="Age">Age</label>
+            <input type="number" id="Age" name="userAge" min="18">
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="userPassword" required>
+            <br>
+            <br>
+            <label for="github">Github Profile</label>
+            <input type="url" id="github" name="userGithub">
+            <br>
+            <br>
+            <label for="address">Address</label>
+            <textarea id="address" rows="5" cols="40"></textarea>
+            <br>
+            <br>
+
+
+            <button type="submit">Create account</button>
+            <button type="reset">Reset</button>
+            <!-- <button disabled>Click</button> -->
+            <br>
+            <br>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2026 Invertis University. All rights reserved.</p>
+            <p>Created by Vikash Kumar</p>
+        </footer>
+    </body>
+</html>
